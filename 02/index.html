@@ -14,13 +14,51 @@
 <body>
 <div id="app"></div>
 <script type="text/babel">
+    const Header = (header) => {
+        return (
+            <header className="header-info">
+                <h1 className="header-of-my-website">Header of my website</h1>
+            </header>
+        );
+    }
 
+    const Sidebar = () => {
+        return (
+            <aside>
+                <nav>
+                    <ul className="main-nav-list">
+                        <li className="main-nav-item"><a href="#" className="main-nav-link"></a>About us</li>
+                        <li className="main-nav-item"><a href="#" className="main-nav-link"></a>Services</li>
+                        <li className="main-nav-item"><a href="#" className="main-nav-link"></a>Payment info</li>
+                        <li className="main-nav-item"><a href="#" className="main-nav-link"></a>Contacts</li>
+                    </ul>
+                </nav>
+            </aside>
+        );
+    }
 
+    const ContainerForContent = (content, text, img) => {
+        return (
+            <main className="content">
+                <h3 className="main-content">Main content of the website</h3>
+                <p className="some-text">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+                </p>
+                <img src={img} alt={`Header ${img}`}/>
+            </main>
+        );
+    }
 
-
-
-
-
+    const Footer = () => {
+        return (
+            <footer className="footer-info">
+                <p className="copyright">© 2024 Website Designed and Created by Concept Fusion Ltd</p>
+                <p className="privacy-policy-info">Privacy Policy © 2024 Ace Vets Limited T/A The Zero Pain Philosophy. All rights reserved.
+                    You may not resell, reproduce, or distribute any of the content on this site.</p>
+            </footer>
+        );
+    }
+    ReactDOM.createRoot(document.getElementById('app')).render(<div><Header/> <Sidebar/> <ContainerForContent/> <Footer/> </div>);
 </script>
 </body>
 </html>

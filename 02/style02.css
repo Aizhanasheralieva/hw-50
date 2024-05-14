@@ -1,0 +1,42 @@
+.content {
+    color: #000;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.43;
+}
+.header-info {
+     padding: 32px 0 25px;
+     background: #E1EEFB;
+}
+.main-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav-item {
+    display: inline-block;
+}
+
+.main-nav-link {
+    color: #2B7BC6;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-info {
+    background: rgba(225, 238, 251, 0.30);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.privacy-policy-info {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.copyright {
+    color: #99A3A9;
+    display: block;
+}
