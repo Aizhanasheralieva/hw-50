@@ -17,7 +17,7 @@
     const Header = (header) => {
         return (
             <header className="header-info">
-                <h1 className="header-of-my-website">Header of my website</h1>
+                <img className="logo-img" src="https://static.wixstatic.com/media/f024ef_86a3999fc77d440aa30ea431bb17c41f~mv2.png/v1/fill/w_240,h_104,al_c,lg_1,q_85,enc_auto/Zero%20Pain%20Philosophy.png" alt="Zeropain Pholosophy"/>
             </header>
         );
     }
@@ -27,10 +27,10 @@
             <aside>
                 <nav>
                     <ul className="main-nav-list">
-                        <li className="main-nav-item"><a href="#" className="main-nav-link"></a>About us</li>
-                        <li className="main-nav-item"><a href="#" className="main-nav-link"></a>Services</li>
-                        <li className="main-nav-item"><a href="#" className="main-nav-link"></a>Payment info</li>
-                        <li className="main-nav-item"><a href="#" className="main-nav-link"></a>Contacts</li>
+                        <li className="main-nav-item"><a href="#" className="main-nav-link">About us</a></li>
+                        <li className="main-nav-item"><a href="#" className="main-nav-link">Zero Pain Practice</a></li>
+                        <li className="main-nav-item"><a href="#" className="main-nav-link">Payment info</a></li>
+                        <li className="main-nav-item"><a href="#" className="main-nav-link">Contact</a></li>
                     </ul>
                 </nav>
             </aside>
@@ -40,15 +40,44 @@
     const ContainerForContent = (content, text, img) => {
         return (
             <main className="content">
-                <h3 className="main-content">Main content of the website</h3>
-                <p className="some-text">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+                <h3 className="main-title">Helping Veterinary Professionals worldwide achieve Analgesic Excellence in
+                    your clinic</h3>
+                <h5 className="detailInfo">About Us</h5>
+                <p className="some-text">
+                    Zero Pain Philosophy is here to help veterinary professionals worldwide achieve Analgesic Excellence
+                    in your clinic.
+                    Our Telemedicine Service is designed to give you specialist input and support in managing your pain
+                    and anaesthetic cases, and we offer a variety of Educational Resources to help spread pain
+                    management knowledge. Our regular Webinars let your whole team stay updated with current topics, and
+                    for quick references on particular topics, take a look at our Pain Updates.
+                    Subscribe to access some of our free educational resources, or look at our Pricing Plans with
+                    further education for vets, nurses & whole practices!
+                    With your help, we sincerely hope the veterinary industry adopts and practises an attitude of zero
+                    tolerance towards pain so that no patient suffers unnecessarily under our care.
                 </p>
-                <img src={img} alt={`Header ${img}`}/>
+                <button className="btn" type="button">Find out more</button>
+                <img className="img-info"
+                     src="https://static.wixstatic.com/media/d185c1_6201607fc50e453bb8db12a84263f58c~mv2.jpg/v1/fill/w_2703,h_1455,al_c,q_90,enc_auto/d185c1_6201607fc50e453bb8db12a84263f58c~mv2.jpg"
+                     alt={`Header ${img}`}/>
+                <h5 className="title"> Pricing Plans</h5>
+                <p className="some-text">
+                    Purchase one of our Pricing Plans with further education for vets, nurses & whole practices!
+                    Our plans allow unlimited access to all of our webinars, courses and podcasts. Some of our plans
+                    include free consultations and even discount on remote bespoke CPD training.
+                </p>
+                <button className="btn" type="button">Find out more</button>
+                <h5 className="title">Zero Pain Practice</h5>
+                <p className="some-text">
+                    Zero Pain Philosophy Practice is an accreditation scheme open to all veterinary practices worldwide.
+                    As a Zero Pain Philosophy Practice, you are committing to practise to the highest standards of pain
+                    management according to current guidelines.
+                    Our accreditation scheme enables you to showcase your efforts towards excellence in pain management
+                    and will set you apart as a practice working to the highest standards.
+                </p>
+                <button className="btn" type="button">Find out more</button>
             </main>
         );
     }
-
     const Footer = () => {
         return (
             <footer className="footer-info">
@@ -58,6 +87,7 @@
             </footer>
         );
     }
+
     ReactDOM.createRoot(document.getElementById('app')).render(<div><Header/> <Sidebar/> <ContainerForContent/> <Footer/> </div>);
 </script>
 </body>
